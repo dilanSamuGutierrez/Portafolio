@@ -1,0 +1,275 @@
+/* Responsive adjustments for mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: var(--color-white);
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+    .greeting {
+        font-size: 22px;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .explore__grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas medianas */
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .greeting {
+        font-size: 20px;
+    }
+    .hero-content {
+        max-width: 450px;
+    }
+
+    .cta-buttons {
+        gap: 15px;
+        margin-top: 35px;
+    }
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+
+    /* wave */
+
+    .wave {
+        height: 120px; /* Reduce wave height */
+    }
+    
+    .wave-social-links {
+        bottom: 15px; /* Adjust position for smaller screens */
+    }
+
+    .wave-social-link {
+        font-size: 1em; /* Slightly smaller font size for icons */
+        margin: 0 10px; /* Less margin between icons */
+    }
+
+    /* Sobre mi */
+
+    .sobremi .fila .col {
+        width: 100%;
+        margin-bottom: 30px; /* Separate columns on smaller screens */
+    }
+
+    .sobremi h2 {
+        font-size: 2rem;
+    }
+
+    .sobremi .contenido-seccion p {
+        font-size: 1.1rem;
+    }
+
+    .explore__grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para tablets */
+        padding: 30px;
+    }
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+    /* Hide the regular menu */
+    .menu-center ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: rgba(7, 6, 6, 0.95);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu-center ul li {
+        margin: 15px 0;
+    }
+
+    /* Show the menu-toggle (hamburger icon) */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Show menu when .open is added to menu-container */
+    .menu-container.open .menu-center ul {
+        display: flex;
+    }
+
+    .hero-content {
+        margin-top: 20px;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .greeting {
+        font-size: 18px;
+    }
+    #callback {
+        width: 100%;
+        max-width: 400px;
+    }
+    .cta-buttons {
+        gap: 12px;
+        margin-top: 30px;
+        flex-wrap: wrap; /* Allows buttons to wrap if needed */
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* wave */
+
+    .wave {
+        height: 100px;
+    }
+
+    .wave-social-links {
+        bottom: 10px;
+        right: auto; /* Center align on smaller screens */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .wave-social-link {
+        font-size: 0.9em;
+        margin: 0 8px;
+    }
+
+    /* Sobre mi  */
+
+    .sobremi .contenido-seccion {
+        padding: 0 15px;
+    }
+
+    .sobremi h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobremi .contenido-seccion p {
+        font-size: 1rem;
+    }
+
+    .sobremi .fila .col .contenedor-intereses .interes {
+        width: 80px;
+        height: 80px;
+        margin: 0 10px 10px 0;
+    }
+
+    .sobremi .fila .col ul li strong {
+        width: 100px;
+    }
+
+    /* portafolio */
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .explore__grid {
+        grid-template-columns: 1fr; /* 1 columna para pantallas pequeñas */
+        gap: 1rem;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+    .greeting {
+        font-size: 16px;
+    }
+    .hero-content {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 25px;
+    }
+    .btn {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+        width: 100%; /* Full width on small screens */
+        max-width: 250px; /* Limit width if needed */
+        text-align: center;
+    }
+
+    /* wave */
+
+    .wave {
+        height: 80px;
+    }
+
+    .wave-social-links {
+        flex-direction: column; /* Stack icons vertically */
+        bottom: 10px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .wave-social-link {
+        font-size: 0.85em;
+        margin: 5px 0; /* Adjust margin for vertical stacking */
+    }
+
+    /* sobre mi */
+
+    .sobremi {
+        padding: 30px 10px;
+    }
+
+    .sobremi h2 {
+        font-size: 1.5rem;
+    }
+
+    .sobremi .contenido-seccion p {
+        font-size: 0.9rem;
+    }
+
+    .sobremi .fila .col ul li strong {
+        width: 90px;
+    }
+
+    .sobremi .fila .col .contenedor-intereses {
+        justify-content: center;
+    }
+
+    .sobremi .fila .col .contenedor-intereses .interes {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-description {
+        padding: 20px;
+    }
+}

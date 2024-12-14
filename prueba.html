@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel Profesional con Swiper.js</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <style>
+        /* Estilos básicos del contenedor */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .swiper-container {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Ajuste de las imágenes en el carrusel */
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .swiper-slide img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Flechas de navegación personalizadas */
+        .swiper-button-next, .swiper-button-prev {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Paginación personalizada */
+        .swiper-pagination-bullet {
+            background: #ddd;
+            opacity: 1;
+            width: 12px;
+            height: 12px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Contenedor del carrusel Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/800x400/007BFF/FFFFFF?text=Imagen+1" alt="Imagen 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/800x400/28A745/FFFFFF?text=Imagen+2" alt="Imagen 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/800x400/DC3545/FFFFFF?text=Imagen+3" alt="Imagen 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/800x400/FFC107/FFFFFF?text=Imagen+4" alt="Imagen 4">
+            </div>
+        </div>
+        
+        <!-- Botones de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Configuración de Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,  // Habilita el bucle
+            autoplay: {
+                delay: 3000,  // Tiempo de espera para el autoplay
+                disableOnInteraction: false,  // Autoplay no se detiene al interactuar
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,  // Paginación clickeable
+            },
+            effect: 'slide',  // Efecto de transición
+            speed: 800,  // Velocidad de transición
+        });
+    </script>
+</body>
+</html>
