@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DilanWeb | Desarrollador Web</title>
+
+    <!-- Estilos e íconos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/5038b205c4.js" crossorigin="anonymous"></script>
+
+
+    <meta name="description" content="Desarrollador Web especializado en ofrecer soluciones tecnológicas que impulsan el crecimiento y éxito de los negocios en línea.">
+    <meta name="keywords" content="desarrollo web, soluciones tecnológicas, servicios web, SEO, sitios personalizados">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Dilan Dev</div>
+        <i class="menu-toggle fas fa-bars"></i>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contact" class="contact-link">Contáctame</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- --- Inicio --- -->
+
+        <section class="hero" id="inicio">
+            <div class="hero-left">
+                <p class="greeting">Hola__</p>
+                <h1>Soy <span id="callback"></span></h1>
+                <p class="subtitle">Creativo apasionado por crear aplicaciones y <span class="highlight">sitios web</span> dinámicos y centrados en el usuario. 💻</p>
+                <a href="#projects" class="btn">Mira mis proyectos</a>
+                
+                <section class="tech-section">
+                    <h2 class="tech-title">Tecnologías que uso</h2>
+                    <div class="tech-icons">
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+        
+            <!-- Componente Lottie a la derecha -->
+            <div class="hero-right">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player src="https://lottie.host/9f481449-fa1b-4b06-ae89-5ea5520ef8b2/vlo2EqDeJR.lottie" background="transparent" speed="1" style="width: 500px; height: 500px" loop autoplay></dotlottie-player>
+            </div>
+
+        </section>
+
+        <!-- ---- -->
+        <!-- --- Social Links ---  -->
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/dilangutierrez/" target="_blank" class="social-link">
+                <span class="social-text">LinkedIn</span>
+                <i class="fab fa-linkedin-in"></i> 
+                
+            </a>
+            <a href="https://github.com/dilanSamuGutierrez" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                <span class="social-text">GitHub</span>
+            </a>
+            <a href="mailto:dsgm2220@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+                <span class="social-text">Email</span>
+            </a>
+        </div>
+
+        <!-- ---- -->
+        <!-- --- Sobre mi --- -->
+
+        <section class="sobre-mi" id="about">
+            <h2 class="titulo">Sobre mí</h2>
+                <div class="perfil">
+
+                    <div class="foto">
+                        <img src="img/IMG_20241202_135305.jpg" alt="Mi Foto">
+                    </div>
+
+                    <div class="texto-contenido">
+                        <h3>¡Hola, soy Dilan!</h3>
+                        </h3>
+                        <p class="texto">Soy una persona apasionada por la creatividad, el trabajo en equipo y la innovación. Siempre busco aprender y mejorar en todo lo que hago.</p>
+                        <ul class="cualidades">
+                            <li>Creatividad</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Comunicación</li>
+                            <li>Resolución de problemas</li>
+                        </ul>
+                        
+                        <blockquote class="frase">
+                            "La única forma de hacer un gran trabajo es amar lo que haces."
+                        </blockquote>
+
+                        <!-- Botón flotante -->
+                        <div class="btn-cv-container">
+                            <a href="docs/CV_Dilan.pdf" class="btn-cv-icon" download="CV_Dilan">
+                                <i class="fas fa-download"></i>
+                                <span class="btn-cv-text">Descargar CV</span>
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+        </section>
+        
+        <!-- ---- -->
+        <!-- --- Proyectos ---  -->
+
+        <section class="portfolio-section" id="projects">
+            <h2 class="titulo">Proyectos</h2>
+            <p class="subtitle other" id="subtitle-small">Aquí podrás ver mis proyectos más destacados, <br> que reflejan mi experiencia y habilidades</p>
+            <div class="portfolio-content">
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="img/Ekimedicall.jpg" alt="Proyecto 1" class="project-image">
+                        <div class="project-info">
+                            <h3>E-Commerce - Ekimedicall</h3>
+                            <p>Desarrollé un E-Commerce personalizado para Ekimedicall, una empresa especializada en productos médicos. El sitio web incluye una interfaz intuitiva para la gestión de productos, un carrito de compras dinámico, opciones de pago seguras y una experiencia de usuario optimizada.</p>
+                            <!-- Tech Stack Section -->
+                            <div class="tech-stack">
+                                <div class="tech-item">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                            </div>
+                            <!-- Botón para visitar la web -->
+                            <a href="https://www.ekimedicall.com" target="_blank" class="visit-btn-small" title="Ver Sitio Web">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/Example.jpg" alt="Proyecto 1" class="project-image">
+                        <div class="project-info">
+                            <h3>E-Commerce - Ekimedicall</h3>
+                            <p>Desarrollé un E-Commerce personalizado para Ekimedicall, una empresa especializada en productos médicos. El sitio web incluye una interfaz intuitiva para la gestión de productos, un carrito de compras dinámico, opciones de pago seguras y una experiencia de usuario optimizada.</p>
+                            <!-- Tech Stack Section -->
+                            <div class="tech-stack">
+                                <div class="tech-item">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                            </div>
+                            <!-- Botón para visitar la web -->
+                            <a href="https://www.ekimedicall.com" target="_blank" class="visit-btn-small" title="Ver Sitio Web">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/Example.jpg" alt="Proyecto 1" class="project-image">
+                        <div class="project-info">
+                            <h3>E-Commerce - Ekimedicall</h3>
+                            <p>Desarrollé un E-Commerce personalizado para Ekimedicall, una empresa especializada en productos médicos. El sitio web incluye una interfaz intuitiva para la gestión de productos, un carrito de compras dinámico, opciones de pago seguras y una experiencia de usuario optimizada.</p>
+                            <!-- Tech Stack Section -->
+                            <div class="tech-stack">
+                                <div class="tech-item">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                            </div>
+                            <!-- Botón para visitar la web -->
+                            <a href="https://www.ekimedicall.com" target="_blank" class="visit-btn-small" title="Ver Sitio Web">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---- -->
+
+        <!-- --- Habilidades --- -->
+        
+        <section class="section__container" id="habilidades">
+            <h2>
+                <span>Mis Habilidades</span> como Desarrollador Web
+            </h2>
+            <p class="section__description">
+                Explora las herramientas y tecnologías con las que trabajo para crear soluciones web eficaces y modernas.
+            </p>
+            <div class="explore__grid">
+                <div class="explore__card">
+                    <span><i class="fab fa-html5"></i></span>
+                    <h4>HTML5</h4>
+                    <p>Lenguaje de marcado para estructurar páginas web</p>
+                </div>
+                <div class="explore__card">
+                    <span><i class="fab fa-css3-alt"></i></span>
+                    <h4>CSS3</h4>
+                    <p>Lenguaje de estilos para diseñar páginas web</p>
+                </div>
+                <div class="explore__card">
+                    <span><i class="fab fa-js"></i></span>
+                    <h4>JavaScript</h4>
+                    <p>Lenguaje de programación para interactividad web</p>
+                </div>
+                <div class="explore__card">
+                    <span><i class="fab fa-react"></i></span>
+                    <h4>React</h4>
+                    <p>Biblioteca de JavaScript para interfaces dinámicas</p>
+                </div>
+                <div class="explore__card">
+                    <span><i class="fas fa-database"></i></span>
+                    <h4>SQL</h4>
+                    <p>Lenguaje para gestión de bases de datos</p>
+                </div>
+                <div class="explore__card">
+                    <span><i class="fab fa-laravel"></i></span>
+                    <h4>Laravel</h4>
+                    <p>Framework de PHP para desarrollo backend</p>
+                </div>
+                <div class="explore__card">
+                    <span><i class="fab fa-git-alt"></i></span>
+                    <h4>Git</h4>
+                    <p>Sistema de control de versiones para proyectos</p>
+                </div>
+                <div class="explore__card">
+                    <span><i class="fab fa-java"></i></span>
+                    <h4>Java</h4>
+                    <p>Lenguaje de programación para aplicaciones multiplataforma</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ---- -->
+        <!-- -- Contacto -- -->
+
+        <section id="contact" class="contact-me-section">
+            <h2 class="titulo">Contáctame</h2>
+            <div class="contact-container">
+                <div class="form-section">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Enviar</button>
+                    </form>
+                </div>
+                <div class="info-section">
+                    <h2>Información de Contacto</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Teléfono:</strong>
+                            <span>+57 320 2725499</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Correo:</strong>
+                            <span>dsgm2220@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Ubicación:</strong>
+                            <span>Bogota DC, Colombia</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ---- -->
+
+        <!-- -- Footer -- -->
+        
+        <footer class="portfolio-footer">
+            <div class="footer-container">
+                <p class="footer-title">© 2025 Dilan Gutierrez. Todos los derechos reservados.</p>
+                <ul class="links">
+                    <li><a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        
+        
+    </main>
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/typelt.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
