@@ -572,6 +572,28 @@ body {
     text-align: center;
 }
 
+.skills__category {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-title);
+    position: relative;
+}
+
+.skills__category::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin-top: 8px;
+    background: var(--color-title);
+    border-radius: 3px;
+}
+
+
 .explore__grid {   
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
@@ -599,50 +621,97 @@ body {
   border-radius: 5px;
   transition: 0.3s;
 }
-
-.explore__card:nth-child(1) span {
-  color: #f04a0c; /* Naranja para HTML5 */
-  background-color: #f6efef;
+/* JavaScript */
+.tech-js span {
+  color: #f7df1e;
+  background-color: #fffbe6;
 }
 
-.explore__card:nth-child(2) span {
-  color: #2862e9; /* Azul para CSS */
-  background-color: #e0f0ff;
+/* PHP */
+.tech-php span {
+  color: #777bb4;
+  background-color: #eeefff;
 }
 
-.explore__card:nth-child(3) span {
-  color: #f7df1e; /* Amarillo para JavaScript */
-  background-color: #fffbe5;
+/* Python */
+.tech-python span {
+  color: #3776ab;
+  background-color: #e7f2ff;
 }
 
-.explore__card:nth-child(4) span {
-  color: #61dafb; /* Azul claro para React */
-  background-color: #e8f7ff;
-}
-
-.explore__card:nth-child(5) span {
-  color: #00758f; /* Azul oscuro para SQL */
+/* SQL */
+.tech-sql span {
+  color: #00758f;
   background-color: #e3f4f8;
 }
 
-.explore__card:nth-child(6) span {
-  color: #ff2d20; /* Rojo para Laravel */
+/* React */
+.tech-react span {
+  color: #61dafb;
+  background-color: #e8faff;
+}
+
+/* Laravel */
+.tech-laravel span {
+  color: #ff2d20;
   background-color: #ffe8e8;
 }
 
-.explore__card:nth-child(7) span {
-  color: #f34f29; /* Naranja para Git */
+/* Tailwind */
+.tech-tailwind span {
+  color: #06b6d4;
+  background-color: #e6fbff;
+}
+
+/* Next.js */
+.tech-next span {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+/* Node.js */
+.tech-node span {
+  color: #68a063;
+  background-color: #eaf6ea;
+}
+
+/* Express */
+.tech-express span {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+/* Git */
+.tech-git span {
+  color: #f34f29;
   background-color: #ffece7;
 }
 
-.explore__card:nth-child(8) span {
-  color: #007396; /* Azul para Java */
+/* GitHub */
+.tech-github span {
+  color: #181717;
+  background-color: #f0f0f0;
+}
+
+
+.explore__card span img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* Java */
+.tech-java span {
+  color: #007396;
   background-color: #e3f5ff;
 }
-.explore__card:hover span {
-  color: var(--color-white);
-  background-color: var(--color-scrollbar);
+
+/* Spring Boot */
+.tech-spring span {
+  color: #6db33f;
+  background-color: #eaf7e3;
 }
+
 
 .explore__card h4 {
   margin-bottom: 0.5rem;
@@ -903,3 +972,10 @@ body {
 }
 
 /* ---- */
+
+.tech-item img {
+  width: 38px;
+  height: 38px;
+}
+
+
